@@ -2,7 +2,6 @@
 [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](https://github.com/feross/standard)
 [![Greenkeeper badge](https://badges.greenkeeper.io/telemark/minelev-dashboard.svg)](https://greenkeeper.io/)
 
-
 # minelev-dashboard
 
 Dashboard for MinElev
