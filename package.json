@@ -1,7 +1,7 @@
 {
   "name": "minelev-dashboard",
   "description": "Dashboard for MinElev",
-  "version": "1.0.16",
+  "version": "1.0.17",
   "license": "MIT",
   "private": true,
   "author": {
@@ -58,7 +58,7 @@
   },
   "dependencies": {
     "axios": "0.16.2",
-    "muicss": "0.9.19",
+    "muicss": "0.9.18",
     "next": "3.0.1-beta.19",
     "react": "15.6.1",
     "react-dom": "15.6.1"
