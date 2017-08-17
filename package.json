@@ -1,7 +1,7 @@
 {
   "name": "minelev-dashboard",
   "description": "Dashboard for MinElev",
-  "version": "1.0.19",
+  "version": "1.1.0",
   "license": "MIT",
   "private": true,
   "author": {
@@ -10,7 +10,7 @@
     "url": "https://github.com/zrrrzzt"
   },
   "engines": {
-    "node": ">=8.1.2"
+    "node": ">=8.4.0"
   },
   "scripts": {
     "test": "standard && nsp check && ava",
@@ -52,14 +52,14 @@
   "devDependencies": {
     "ava": "0.22.0",
     "coveralls": "2.13.1",
-    "nsp": "2.6.3",
+    "nsp": "2.7.0",
     "nyc": "11.1.0",
     "standard": "10.0.3"
   },
   "dependencies": {
     "axios": "0.16.2",
-    "muicss": "0.9.18",
-    "next": "3.0.1",
+    "muicss": "0.9.20",
+    "next": "3.0.6",
     "react": "15.6.1",
     "react-dom": "15.6.1"
   }

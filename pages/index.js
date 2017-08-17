@@ -19,22 +19,32 @@ export default class Index extends React.Component {
         <Container fluid>
           <h1 className='mui--text-title'>MinElev Dashboard</h1>
           <Row>
-            <Col md='4'>
-              <Queue title='Antall i kø' source='https://tfk-livestats.firebaseio.com/minelev.json' refresh='10' />
+            <Col md='3'>
+              <Queue title='Antall i kø' source='https://logs.minelev.no/stats/queue' refresh='10' />
             </Col>
-            <Col md='4'>
+            <Col md='3'>
               <Saksbehandling title='Antall behandlet' source='https://seneca-firebase-test.firebaseio.com/tfk-saksbehandling-elev-varsel.json' refresh='10' />
             </Col>
-            <Col md='4'>
-              <Total title='Antall totalt' source='https://logs.minelev.no/stats/total' refresh='10' />
+            <Col md='3'>
+              <Total title='Antall varsler' source='https://logs.minelev.no/stats/total/varsel' refresh='10' />
+            </Col>
+            <Col md='3'>
+              <Total title='Antall samtaler' source='https://logs.minelev.no/stats/total/samtale' refresh='10' />
             </Col>
           </Row>
           <Row>
-            <Col md='4'>
-              <Server title='Serverstatus' source='https://parser.rss.micro.t-fk.no/?rss=http://rss.uptimerobot.com/u445292-ef20245b7b4433e4e4ab5f34244338d6' refresh='10' />
+            <Col md='12'>
+              <Schools title='Antall varsler pr skole' source='https://logs.minelev.no/stats/schools/varsel' refresh='10' />
             </Col>
-            <Col md='8'>
-              <Schools title='Antall pr skole' source='https://logs.minelev.no/stats/schools' refresh='10' />
+          </Row>
+          <Row>
+            <Col md='12'>
+              <Schools title='Antall samtaler pr skole' source='https://logs.minelev.no/stats/schools/samtale' refresh='10' />
+            </Col>
+          </Row>
+          <Row>
+            <Col md='12'>
+              <Server title='Serverstatus' source='https://parser.rss.micro.t-fk.no/?rss=http://rss.uptimerobot.com/u445292-ef20245b7b4433e4e4ab5f34244338d6' refresh='10' />
             </Col>
           </Row>
         </Container>
