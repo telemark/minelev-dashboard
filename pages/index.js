@@ -23,7 +23,7 @@ export default class Index extends React.Component {
               <Queue title='Antall i kø' source='https://logs.minelev.no/stats/queue' refresh='10' />
             </Col>
             <Col md='3'>
-              <Saksbehandling title='Antall behandlet' source='https://seneca-firebase-test.firebaseio.com/tfk-saksbehandling-elev-varsel.json' refresh='10' />
+              <Saksbehandling title='Antall behandlet' source='https://stats.service.t-fk.no/stats/minelev-robot-stats' refresh='10' />
             </Col>
             <Col md='3'>
               <Total title='Antall varsler' source='https://logs.minelev.no/stats/total/varsel' refresh='10' />

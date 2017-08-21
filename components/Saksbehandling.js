@@ -1,37 +1,32 @@
 'use strict'
 
 import React from 'react'
-import Panel from 'muicss/lib/react/panel'
+import Card from './Card'
 const getData = require('../lib/get-data')
 
 export default class Status extends React.Component {
   constructor (props) {
     super(props)
     this.state = {
-      data: false
+      data: {queue: {done: {count: 0}}}
     }
     this.tick = this.tick.bind(this)
   }
 
   async componentDidMount () {
     const data = await getData(this.props.source)
-    this.setState({data: data})
+    this.setState({data: data[0]})
     this.timer = setInterval(this.tick, parseInt(this.props.refresh || '1', 10) * 1000 * 60)
   }
 
   async tick () {
     const data = await getData(this.props.source)
-    this.setState({data: data})
+    this.setState({data: data[0]})
   }
 
   render () {
     return (
-      <Panel>
-        <h2>{this.props.title}</h2>
-        <ul className='mui-list--unstyled'>
-          {this.state.data ? <li className='mui--text-display4'>{this.state.data.done || 0}</li> : null}
-        </ul>
-      </Panel>
+      <Card title={this.props.title} number={this.state.data.queue.done.count} />
     )
   }
 }
