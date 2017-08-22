@@ -29,14 +29,16 @@ export default class Status extends React.Component {
       <Panel>
         <h2>{this.props.title}</h2>
         <table width='100%'>
-          {this.state.data.map((line) => {
-            return (
-              <tr>
-                <td className='mui--text-display1 mui--divider-bottom'>{line._id}</td>
-                <td className='mui--text-display1 mui--text-right mui--divider-bottom'>{line.total}</td>
-              </tr>
-            )
-          })}
+          <tbody>
+            {this.state.data.map((line) => {
+              return (
+                <tr>
+                  <td className='mui--text-display1 mui--divider-bottom'>{line._id}</td>
+                  <td className='mui--text-display1 mui--text-right mui--divider-bottom'>{line.total}</td>
+                </tr>
+              )
+            })}
+          </tbody>
         </table>
       </Panel>
     )

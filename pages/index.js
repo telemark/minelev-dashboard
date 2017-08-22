@@ -24,7 +24,7 @@ export default class Index extends React.Component {
               <Queue title='Antall i kø' source='https://logs.minelev.no/stats/queue' refresh='10' />
             </Col>
             <Col md='3'>
-              <Saksbehandling title='Antall behandlet' source='https://stats.service.t-fk.no/stats/minelev-robot-stats' refresh='10' />
+              <Saksbehandling title='Antall behandlet' source='https://stats.service.t-fk.no/stats/minelev' refresh='10' />
             </Col>
             <Col md='3'>
               <Total title='Antall varsler' source='https://logs.minelev.no/stats/total/varsel' refresh='10' />
@@ -33,7 +33,7 @@ export default class Index extends React.Component {
               <Total title='Antall samtaler' source='https://logs.minelev.no/stats/total/samtale' refresh='10' />
             </Col>
           </Row>
-          <Undertjenester source='https://stats.service.t-fk.no/stats/minelev-robot-stats' refresh='10' />
+          <Undertjenester source='https://stats.service.t-fk.no/stats/minelev' refresh='10' />
           <Row>
             <Col md='12'>
               <Schools title='Antall varsler pr skole' source='https://logs.minelev.no/stats/schools/varsel' refresh='10' />
