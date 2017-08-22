@@ -8,25 +8,27 @@ export default class Status extends React.Component {
   constructor (props) {
     super(props)
     this.state = {
-      data: false
+      data: {number: 0}
     }
     this.tick = this.tick.bind(this)
   }
 
   async componentDidMount () {
     const data = await getData(this.props.source)
-    this.setState({data: data})
+    const value = data && data.queue ? data.queue : 0
+    this.setState({data: {number: value}})
     this.timer = setInterval(this.tick, parseInt(this.props.refresh || '1', 10) * 1000 * 60)
   }
 
   async tick () {
     const data = await getData(this.props.source)
-    this.setState({data: data})
+    const value = data && data.queue ? data.queue : 0
+    this.setState({data: {number: value}})
   }
 
   render () {
     return (
-      <Card title={this.props.title} number={this.state.data && this.state.data.queue ? this.state.data.queue : 0} />
+      <Card title={this.props.title} number={this.state.data.number} />
     )
   }
 }

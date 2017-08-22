@@ -10,6 +10,7 @@ import Saksbehandling from '../components/Saksbehandling'
 import Server from '../components/Server'
 import Schools from '../components/Schools'
 import Total from '../components/Total'
+import Undertjenester from '../components/Undertjenester'
 
 export default class Index extends React.Component {
   render () {
@@ -32,6 +33,7 @@ export default class Index extends React.Component {
               <Total title='Antall samtaler' source='https://logs.minelev.no/stats/total/samtale' refresh='10' />
             </Col>
           </Row>
+          <Undertjenester source='https://stats.service.t-fk.no/stats/minelev-robot-stats' refresh='10' />
           <Row>
             <Col md='12'>
               <Schools title='Antall varsler pr skole' source='https://logs.minelev.no/stats/schools/varsel' refresh='10' />
