@@ -1,7 +1,7 @@
 {
   "name": "minelev-dashboard",
   "description": "Dashboard for MinElev",
-  "version": "1.5.7",
+  "version": "1.5.8",
   "license": "MIT",
   "private": true,
   "author": {
