@@ -6,10 +6,9 @@ import Row from 'muicss/lib/react/row'
 import Col from 'muicss/lib/react/col'
 import Head from '../components/head'
 import Queue from '../components/Queue'
-import Server from '../components/Server'
-import Schools from '../components/Schools'
 import Total from '../components/Total'
 import Undertjenester from '../components/Undertjenester'
+import Navbar from '../components/Navbar'
 
 export default class Index extends React.Component {
   render () {
@@ -17,7 +16,7 @@ export default class Index extends React.Component {
       <div>
         <Head />
         <Container fluid>
-          <h1 className='mui--text-title'>MinElev Dashboard</h1>
+          <Navbar />
           <Row>
             <Col md='4'>
               <Queue title='Antall i kø' source='https://logs.minelev.no/stats/queue' refresh='10' />
@@ -30,21 +29,6 @@ export default class Index extends React.Component {
             </Col>
           </Row>
           <Undertjenester source='https://stats.service.t-fk.no/stats/minelev' refresh='10' />
-          <Row>
-            <Col md='12'>
-              <Schools title='Antall varsler pr skole' source='https://logs.minelev.no/stats/schools/varsel' refresh='10' />
-            </Col>
-          </Row>
-          <Row>
-            <Col md='12'>
-              <Schools title='Antall samtaler pr skole' source='https://logs.minelev.no/stats/schools/samtale' refresh='10' />
-            </Col>
-          </Row>
-          <Row>
-            <Col md='12'>
-              <Server title='Serverstatus' source='https://parser.rss.micro.t-fk.no/?rss=http://rss.uptimerobot.com/u445292-ef20245b7b4433e4e4ab5f34244338d6' refresh='10' />
-            </Col>
-          </Row>
         </Container>
       </div>
     )

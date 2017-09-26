@@ -1,7 +1,7 @@
 {
   "name": "minelev-dashboard",
   "description": "Dashboard for MinElev",
-  "version": "1.5.9",
+  "version": "1.6.0",
   "license": "MIT",
   "private": true,
   "author": {
@@ -21,7 +21,7 @@
     "dev": "next",
     "build": "next build && next export",
     "start": "next start",
-    "now-deploy": "npm run build && now out --static -n dashboard-minelev && now alias"
+    "now-deploy": "now out --static -n dashboard-minelev && now alias"
   },
   "keywords": [
     "dashboard",
