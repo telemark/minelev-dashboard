@@ -10,7 +10,7 @@
     "url": "https://github.com/zrrrzzt"
   },
   "engines": {
-    "node": ">=8.5.0"
+    "node": ">=8.9.4"
   },
   "scripts": {
     "test": "standard && nsp check && ava",
@@ -51,16 +51,16 @@
   },
   "devDependencies": {
     "ava": "0.24.0",
-    "coveralls": "2.13.3",
+    "coveralls": "3.0.0",
     "nsp": "3.1.0",
-    "nyc": "11.3.0",
+    "nyc": "11.4.1",
     "standard": "10.0.3"
   },
   "dependencies": {
     "axios": "0.17.1",
-    "next": "4.1.4",
-    "react-dom": "16.2.0"
+    "next": "4.2.2",
+    "react-dom": "16.2.0",
     "react": "16.2.0",
-    "muicss": "0.9.32",
+    "muicss": "0.9.35"
   }
 }
