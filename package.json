@@ -21,7 +21,7 @@
     "dev": "next",
     "build": "next build && next export",
     "start": "next start",
-    "now-deploy": "now out --static -n dashboard-minelev && now alias"
+    "deploy": "npm test && npm run build && now out --static -n dashboard-minelev && now alias"
   },
   "keywords": [
     "dashboard",
