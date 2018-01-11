@@ -1,10 +1,7 @@
-'use strict'
-
 import React from 'react'
-import Row from 'muicss/lib/react/row'
-import Col from 'muicss/lib/react/col'
 import Card from './Card'
 import ErrorCard from './ErrorCard'
+import Row from './Row'
 const getData = require('../lib/get-data')
 
 function updateData (response) {
@@ -43,27 +40,35 @@ export default class Status extends React.Component {
     return (
       <div>
         <Row>
-          <Col md='4'>
+          <div>
             <ErrorCard title='Kø feil' number={this.state.data.queueErrors} />
-          </Col>
-          <Col md='4'>
+          </div>
+          <div>
             <ErrorCard title='SvarUt feil' number={this.state.data.distributionErrors} />
-          </Col>
-          <Col md='4'>
+          </div>
+          <div>
             <ErrorCard title='Arkivert feil' number={this.state.data.archiveErrors} />
-          </Col>
+          </div>
         </Row>
         <Row>
-          <Col md='4'>
+          <div>
             <Card title='Behandlet' number={this.state.data.queueDone} />
-          </Col>
-          <Col md='4'>
+          </div>
+          <div>
             <Card title='SvarUt' number={this.state.data.distributionDone} />
-          </Col>
-          <Col md='4'>
+          </div>
+          <div>
             <Card title='Arkivert' number={this.state.data.archiveDone} />
-          </Col>
+          </div>
         </Row>
+        <style jsx>
+          {`
+            div {
+              flex: 3;
+              margin: 5px;
+            }
+          `}
+        </style>
       </div>
     )
   }
