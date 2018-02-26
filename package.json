@@ -19,9 +19,10 @@
     "coveralls": "nyc ava && nyc report --reporter=lcov && cat coverage/lcov.info | coveralls",
     "standard-fix": "standard --fix",
     "dev": "next",
-    "build": "next build && next export",
+    "build": "next build",
+    "export": "next build && next export",
     "start": "next start",
-    "deploy": "npm test && npm run build && now out --static -n dashboard-minelev && now alias",
+    "deploy": "npm test && npm run export && now --static out --name dashboard-minelev && now alias",
     "refresh": "rm -rf node_modules && rm package-lock.json && npm install"
   },
   "keywords": [

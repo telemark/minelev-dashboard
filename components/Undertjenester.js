@@ -1,8 +1,8 @@
-import React from 'react'
+import { Component } from 'react'
 import Card from './Card'
 import ErrorCard from './ErrorCard'
 import Row from './Row'
-const getData = require('../lib/get-data')
+import getData from '../lib/get-data'
 
 function updateData (response) {
   const data = response.length > 0 ? response[0] : false
@@ -16,7 +16,7 @@ function updateData (response) {
   }
 }
 
-export default class Status extends React.Component {
+export default class Status extends Component {
   constructor (props) {
     super(props)
     this.state = {

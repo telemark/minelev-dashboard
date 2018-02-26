@@ -1,6 +1,6 @@
-import React from 'react'
+import { Component } from 'react'
 
-export default class Card extends React.Component {
+export default class Card extends Component {
   render () {
     return (
       <div className={'card'}>

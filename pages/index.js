@@ -1,11 +1,11 @@
-import React from 'react'
+import { Component } from 'react'
 import Row from '../components/Row'
 import Queue from '../components/Queue'
 import Total from '../components/Total'
 import Undertjenester from '../components/Undertjenester'
 import Layout from '../components/Layout'
 
-export default class Index extends React.Component {
+export default class Index extends Component {
   render () {
     return (
       <Layout>
