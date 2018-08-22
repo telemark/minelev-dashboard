@@ -23,7 +23,8 @@
     "export": "next build && next export",
     "start": "next start",
     "deploy": "npm test && npm run export && now --static out --name dashboard-minelev && now alias",
-    "refresh": "rm -rf node_modules && rm package-lock.json && npm install"
+    "refresh": "rm -rf node_modules && rm package-lock.json && npm install",
+    "cleanup": "rm -rf .next && rm -rf out"
   },
   "keywords": [
     "dashboard",

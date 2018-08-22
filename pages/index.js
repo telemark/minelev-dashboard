@@ -19,6 +19,9 @@ export default class Index extends Component {
           <div>
             <Total title='Antall samtaler' source='https://logs.minelev.no/stats/total/samtale' refresh='10' />
           </div>
+          <div>
+            <Total title='Antall notater' source='https://logs.minelev.no/stats/total/notat' refresh='10' />
+          </div>
         </Row>
         <Row>
           <div>
