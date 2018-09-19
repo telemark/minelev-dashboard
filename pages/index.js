@@ -25,13 +25,13 @@ export default class Index extends Component {
         </Row>
         <Row>
           <div>
-            <Total title='Antall bekreftelser' source='https://logs.minelev.no/stats/total/category/yff-bekreftelse' refresh='10' />
+            <Total title='Antall bekreftelser' source='https://logs.minelev.no/stats/total/yff/yff-bekreftelse' refresh='10' />
           </div>
           <div>
-            <Total title='Antall tilbakemeldinger' source='https://logs.minelev.no/stats/total/category/yff-tilbakemelding' refresh='10' />
+            <Total title='Antall tilbakemeldinger' source='https://logs.minelev.no/stats/total/yff/yff-tilbakemelding' refresh='10' />
           </div>
           <div>
-            <Total title='Antall lokale læreplaner' source='https://logs.minelev.no/stats/total/category/yff-lokalplan' refresh='10' />
+            <Total title='Antall lokale læreplaner' source='https://logs.minelev.no/stats/total/yff/yff-lokalplan' refresh='10' />
           </div>
         </Row>
         <Undertjenester source='https://stats.service.t-fk.no/stats/minelev' refresh='10' />
