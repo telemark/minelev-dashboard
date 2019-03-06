@@ -20,6 +20,7 @@
     "standard-fix": "standard --fix",
     "dev": "next",
     "build": "next build",
+    "now-build": "next build && next export",
     "export": "next build && next export",
     "start": "next start",
     "deploy": "npm test && npm run export && now --static out --name dashboard-minelev && now alias",
@@ -42,16 +43,6 @@
     "url": "https://github.com/telemark/minelev-dashboard/issues"
   },
   "homepage": "https://github.com/telemark/minelev-dashboard",
-  "now": {
-    "name": "dashboard-minelev",
-    "alias": [
-      "dashboard.minelev.no"
-    ],
-    "env": {
-      "NODE_ENV": "production"
-    },
-    "type": "npm"
-  },
   "devDependencies": {
     "ava": "1.3.1",
     "coveralls": "3.0.3",
