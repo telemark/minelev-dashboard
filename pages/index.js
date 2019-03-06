@@ -11,27 +11,27 @@ export default class Index extends Component {
       <Layout>
         <Row>
           <div>
-            <Queue title='Antall i kø' source='https://logs.minelev.no/stats/queue' refresh='10' />
+            <Queue title='Antall i kø' source='https://stats.logs.minelev.no/stats/queue' refresh='10' />
           </div>
           <div>
-            <Total title='Antall varsler' source='https://logs.minelev.no/stats/total/varsel' refresh='10' />
+            <Total title='Antall varsler' source='https://stats.logs.minelev.no/stats/total/varsel' refresh='10' />
           </div>
           <div>
-            <Total title='Antall samtaler' source='https://logs.minelev.no/stats/total/samtale' refresh='10' />
+            <Total title='Antall samtaler' source='https://stats.logs.minelev.no/stats/total/samtale' refresh='10' />
           </div>
           <div>
-            <Total title='Antall notater' source='https://logs.minelev.no/stats/total/notat' refresh='10' />
+            <Total title='Antall notater' source='https://stats.logs.minelev.no/stats/total/notat' refresh='10' />
           </div>
         </Row>
         <Row>
           <div>
-            <Total title='Antall bekreftelser' source='https://logs.minelev.no/stats/total/yff/yff-bekreftelse' refresh='10' />
+            <Total title='Antall bekreftelser' source='https://stats.logs.minelev.no/stats/total/yff/yff-bekreftelse' refresh='10' />
           </div>
           <div>
-            <Total title='Antall tilbakemeldinger' source='https://logs.minelev.no/stats/total/yff/yff-tilbakemelding' refresh='10' />
+            <Total title='Antall tilbakemeldinger' source='https://stats.logs.minelev.no/stats/total/yff/yff-tilbakemelding' refresh='10' />
           </div>
           <div>
-            <Total title='Antall lokale læreplaner' source='https://logs.minelev.no/stats/total/yff/yff-lokalplan' refresh='10' />
+            <Total title='Antall lokale læreplaner' source='https://stats.logs.minelev.no/stats/total/yff/yff-lokalplan' refresh='10' />
           </div>
         </Row>
         <Undertjenester source='https://stats.service.t-fk.no/stats/minelev' refresh='10' />
