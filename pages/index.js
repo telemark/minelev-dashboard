@@ -33,6 +33,9 @@ export default class Index extends Component {
           <div>
             <Total title='Antall lokale læreplaner' source='https://stats.logs.minelev.no/stats/total/yff/yff-lokalplan' refresh='10' />
           </div>
+          <div>
+            <Total title='Antall kopi pr epost' source='https://stats.logs.minelev.no/stats/email' refresh='10' />
+          </div>
         </Row>
         <Undertjenester source='https://stats.service.t-fk.no/stats/minelev' refresh='10' />
         <style jsx>
