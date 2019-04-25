@@ -1,9 +1,7 @@
-import Head from './Head'
 import Navbar from './Navbar'
 
 export default ({ children }) => (
   <div>
-    <Head />
     <Navbar title={'Dashboard MinElev'} />
     <div className={'wrapper'}>
       { children }
