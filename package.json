@@ -20,7 +20,7 @@
     "standard-fix": "standard --fix",
     "dev": "next",
     "build": "next build",
-    "now-build": "next build && next export",
+    "now-build": "next build",
     "export": "next build && next export",
     "start": "next start",
     "deploy": "npm test && now --target production",
