@@ -1,13 +1,16 @@
-import { Component } from 'react'
+import Head from 'next/head'
 import Row from '../components/Row'
 import Queue from '../components/Queue'
 import Total from '../components/Total'
 import Undertjenester from '../components/Undertjenester'
 import Layout from '../components/Layout'
 
-export default class Index extends Component {
-  render () {
-    return (
+const Index = () => {
+  return (
+    <>
+      <Head>
+        <title>MinElev dashboard</title>
+      </Head>
       <Layout>
         <Row>
           <div>
@@ -47,6 +50,8 @@ export default class Index extends Component {
           `}
         </style>
       </Layout>
-    )
-  }
+    </>
+  )
 }
+
+export default Index
