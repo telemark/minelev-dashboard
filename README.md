@@ -5,6 +5,22 @@
 
 Dashboard for MinElev
 
+## Development
+
+```
+$ npm run dev
+```
+
+## Deploy - Manually
+
+```
+$ npm run deploy
+```
+
+## Deploy - Automatic
+
+Do a tagged release
+
 ## License
 
 [MIT](LICENSE)
