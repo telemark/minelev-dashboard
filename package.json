@@ -23,7 +23,9 @@
     "now-build": "next build",
     "export": "next build && next export",
     "start": "next start",
-    "deploy": "npm test && now --target production",
+    "deploy": "npm test && now --prod && rm -rf .vercel",
+    "deploy:prod": "npm run test-offline && now --local-config now-prod.json --prod --confirm && rm -rf .vercel",
+    "deploy:test": "npm run test-offline && now --local-config now-test.json --prod --confirm && rm -rf .vercel",
     "refresh": "rm -rf node_modules && rm package-lock.json && npm install",
     "cleanup": "rm -rf .next && rm -rf out"
   },

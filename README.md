@@ -14,7 +14,8 @@ $ npm run dev
 ## Deploy - Manually
 
 ```
-$ npm run deploy
+$ npm run deploy:test
+$ npm run deploy:prod
 ```
 
 ## Deploy - Automatic

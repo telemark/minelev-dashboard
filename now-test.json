@@ -1,0 +1,35 @@
+{
+  "version": 2,
+  "name": "minelev-dashboard-test",
+  "alias": [
+    "dashboard.minelev.vtfk.dev"
+  ],
+  "scope": "vtfk",
+  "env": {
+    "NODE_ENV": "production",
+    "LOGS_STATS": "@minelev-test-logs-stats-url",
+    "ROBOT_STATS": "@minelev-test-robot-stats-url"
+  },
+  "builds": [
+    {
+      "src": "next.config.js",
+      "use": "@now/next"
+    }
+  ],
+  "routes": [
+    {	
+      "src": "^/service-worker.js$",	
+      "dest": "/_next/static/service-worker.js",
+      "headers": {
+        "cache-control": "public, max-age=43200, immutable",
+        "Service-Worker-Allowed": "/"
+      }
+    },
+    {"src": "/", "dest": "/index.html", "headers": {
+      "Content-Security-Policy": "default-src 'self'; style-src 'self' 'unsafe-inline'; connect-src 'self' https://stats.logs.minelev.no https://stats.service.t-fk.no; object-src 'none'; img-src 'self' data:; frame-ancestors 'none'",
+      "Strict-Transport-Security": "max-age=63072000;",
+      "X-Frame-Options": "DENY",
+      "X-Content-Type-Options": "nosniff"
+    }}
+  ]
+}
