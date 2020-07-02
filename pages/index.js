@@ -8,7 +8,6 @@ import Layout from '../components/Layout'
 import config from '../config'
 
 const Index = () => {
-  console.log(config)
   return (
     <>
       <Head>
