@@ -2,9 +2,9 @@ import Navbar from './Navbar'
 
 export default ({ children }) => (
   <div>
-    <Navbar title={'Dashboard MinElev'} />
-    <div className={'wrapper'}>
-      { children }
+    <Navbar title='Dashboard MinElev' />
+    <div className='wrapper'>
+      {children}
     </div>
     <style jsx global>
       {`
