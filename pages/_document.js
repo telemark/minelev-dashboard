@@ -21,10 +21,6 @@ class MyDocument extends Document {
           <link rel='manifest' href='/static/site.webmanifest' />
           <meta name='msapplication-config' content='/static/browserconfig.xml' />
 
-          <link href='https://fonts.googleapis.com/icon?family=Material+Icons' rel='stylesheet' />
-          <link href='https://fonts.googleapis.com/css2?family=Nunito+Sans' rel='stylesheet' />
-          <link href='https://fonts.googleapis.com/css2?family=Nunito' rel='stylesheet' />
-
           <meta name='viewport' content='width=device-width, initial-scale=1.0' />
           <meta name='description' content='Dashboard for MinElev plattformen' />
         </Head>
