@@ -1,8 +1,9 @@
 import Navbar from './Navbar'
+import config from '../config'
 
 export default ({ children }) => (
   <div>
-    <Navbar title='Dashboard MinElev' />
+    <Navbar title={`Dashboard MinElev${config.TEST ? ' TEST' : ''}`} />
     <div className='wrapper'>
       {children}
     </div>

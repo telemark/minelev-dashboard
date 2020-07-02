@@ -8,7 +8,8 @@
   "env": {
     "NODE_ENV": "production",
     "LOGS_STATS": "@minelev-test-logs-stats-url",
-    "ROBOT_STATS": "@minelev-test-robot-stats-url"
+    "ROBOT_STATS": "@minelev-test-robot-stats-url",
+    "TEST": true
   },
   "builds": [
     {
