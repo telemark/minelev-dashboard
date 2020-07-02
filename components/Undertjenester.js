@@ -41,13 +41,13 @@ export default class Status extends Component {
       <div>
         <Row>
           <div>
-            <ErrorCard title='Kø feil' number={this.state.data.queueErrors} />
+            <ErrorCard title='Køfeil' number={this.state.data.queueErrors} />
           </div>
           <div>
-            <ErrorCard title='SvarUt feil' number={this.state.data.distributionErrors} />
+            <ErrorCard title='SvarUt-feil' number={this.state.data.distributionErrors} />
           </div>
           <div>
-            <ErrorCard title='Arkivert feil' number={this.state.data.archiveErrors} />
+            <ErrorCard title='Arkiveringsfeil' number={this.state.data.archiveErrors} />
           </div>
         </Row>
         <Row>

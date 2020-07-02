@@ -5,7 +5,10 @@ import Total from '../components/Total'
 import Undertjenester from '../components/Undertjenester'
 import Layout from '../components/Layout'
 
+import config from '../config'
+
 const Index = () => {
+  console.log(config)
   return (
     <>
       <Head>
@@ -14,33 +17,33 @@ const Index = () => {
       <Layout>
         <Row>
           <div>
-            <Queue title='Antall i kø' source='https://stats.logs.minelev.no/stats/queue' refresh='10' />
+            <Queue title='Antall i kø' source={`${config.LOGS_STATS}/stats/queue`} refresh='10' />
           </div>
           <div>
-            <Total title='Antall varsler' source='https://stats.logs.minelev.no/stats/total/varsel' refresh='10' />
+            <Total title='Antall varsler' source={`${config.LOGS_STATS}/stats/total/varsel`} refresh='10' />
           </div>
           <div>
-            <Total title='Antall samtaler' source='https://stats.logs.minelev.no/stats/total/samtale' refresh='10' />
+            <Total title='Antall samtaler' source={`${config.LOGS_STATS}/stats/total/samtale`} refresh='10' />
           </div>
           <div>
-            <Total title='Antall notater' source='https://stats.logs.minelev.no/stats/total/notat' refresh='10' />
+            <Total title='Antall notater' source={`${config.LOGS_STATS}/stats/total/notat`} refresh='10' />
           </div>
         </Row>
         <Row>
           <div>
-            <Total title='Antall bekreftelser' source='https://stats.logs.minelev.no/stats/total/yff/yff-bekreftelse' refresh='10' />
+            <Total title='Antall bekreftelser' source={`${config.LOGS_STATS}/stats/total/yff/yff-bekreftelse`} refresh='10' />
           </div>
           <div>
-            <Total title='Antall tilbakemeldinger' source='https://stats.logs.minelev.no/stats/total/yff/yff-tilbakemelding' refresh='10' />
+            <Total title='Antall tilbakemeldinger' source={`${config.LOGS_STATS}/stats/total/yff/yff-tilbakemelding`} refresh='10' />
           </div>
           <div>
-            <Total title='Antall lokale læreplaner' source='https://stats.logs.minelev.no/stats/total/yff/yff-lokalplan' refresh='10' />
+            <Total title='Antall lokale læreplaner' source={`${config.LOGS_STATS}/stats/total/yff/yff-lokalplan`} refresh='10' />
           </div>
           <div>
-            <Total title='Antall kopi pr epost' source='https://stats.logs.minelev.no/stats/email' refresh='10' />
+            <Total title='Antall kopi pr epost' source={`${config.LOGS_STATS}/stats/email`} refresh='10' />
           </div>
         </Row>
-        <Undertjenester source='https://stats.service.t-fk.no/stats/minelev' refresh='10' />
+        <Undertjenester source={`${config.ROBOT_STATS}/stats/minelev`} refresh='10' />
         <style jsx>
           {`
             div {

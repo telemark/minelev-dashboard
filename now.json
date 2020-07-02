@@ -6,7 +6,9 @@
   ],
   "scope": "minelev",
   "env": {
-    "NODE_ENV": "production"
+    "NODE_ENV": "production",
+    "LOGS_STATS": "@minelev-prod-logs-stats-url",
+    "ROBOT_STATS": "@minelev-prod-robot-stats-url"
   },
   "builds": [
     {
