@@ -3,7 +3,7 @@ import config from '../config'
 
 export default ({ children }) => (
   <div>
-    <Navbar title={`Dashboard MinElev${config.TEST ? ' TEST' : ''}`} />
+    <Navbar title={`Dashboard MinElev${config.TEST === 'true' ? ' TEST' : ''}`} />
     <div className='wrapper'>
       {children}
     </div>
