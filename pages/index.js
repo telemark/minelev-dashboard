@@ -30,13 +30,13 @@ const Index = () => {
         </Row>
         <Row>
           <div>
-            <Total title='Antall bekreftelser' source={`${config.LOGS_STATS}/stats/total/yff/yff-bekreftelse`} refresh='10' />
+            <Total title='Antall bekreftelser' source={`${config.LOGS_STATS}/stats/total/yff/bekreftelse`} refresh='10' />
           </div>
           <div>
-            <Total title='Antall tilbakemeldinger' source={`${config.LOGS_STATS}/stats/total/yff/yff-tilbakemelding`} refresh='10' />
+            <Total title='Antall tilbakemeldinger' source={`${config.LOGS_STATS}/stats/total/yff/tilbakemelding`} refresh='10' />
           </div>
           <div>
-            <Total title='Antall lokale læreplaner' source={`${config.LOGS_STATS}/stats/total/yff/yff-lokalplan`} refresh='10' />
+            <Total title='Antall lokale læreplaner' source={`${config.LOGS_STATS}/stats/total/yff/laereplan`} refresh='10' />
           </div>
           <div>
             <Total title='Antall kopi pr epost' source={`${config.LOGS_STATS}/stats/email`} refresh='10' />

@@ -1,7 +1,3 @@
-const withOffline = moduleExists('next-offline')
-  ? require('next-offline')
-  : {}
-
 const nextConfig = {
   target: 'serverless',
   workboxOpts: {
@@ -31,14 +27,4 @@ const nextConfig = {
   }
 }
 
-module.exports = moduleExists('next-offline')
-  ? withOffline(nextConfig)
-  : nextConfig
-
-function moduleExists (name) {
-  try {
-    return require.resolve(name)
-  } catch (error) {
-    return false
-  }
-}
+module.exports = nextConfig
