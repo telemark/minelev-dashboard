@@ -4,7 +4,7 @@
   "alias": [
     "dashboard.minelev.no"
   ],
-  "scope": "minelev",
+  "scope": "vtfk",
   "env": {
     "NODE_ENV": "production",
     "LOGS_STATS": "@minelev-prod-logs-stats-url",
